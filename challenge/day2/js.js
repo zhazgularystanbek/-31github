@@ -9,3 +9,13 @@ fruits.forEach((f) => {
 });
 
 console.log(count);
+
+// Вставить тире между словами строки
+
+let str = "HTML JavaScript PHP";
+
+function insert_dash(str) {
+  return str.replaceAll(" ", "-");
+}
+
+console.log(insert_dash(str));

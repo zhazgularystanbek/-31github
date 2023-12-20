@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background: rgb(24, 23, 29);
+  margin-top: 50px;
+  width: 250px;
+  height: 380px;
+  padding: 20px;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+h1 {
+  font-size: 18px;
+  color: rgb(46, 255, 10);
+}
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.burger-menu div {
+  width: 40px;
+  height: 3px;
+  background: rgb(244, 56, 66);
+  position: absolute;
+  transition: 1s ease;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  animation: animation 1.5s;
+}
+@keyframes animation {
+  0% {
+    transform: translateX(-200px);
+  }
+}
+.menu {
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 5px;
+  color: rgb(250, 0, 0);
+  font-size: 20px;
+  min-width: 250px;
+}
+
+.show {
+  display: block;
+}
+.container .header .burger-menu .line2 {
+  margin-top: 10px;
+  width: 32px;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.line3 {
+  margin-top: 20px;
+}
+.linetr1 {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.linetr3 {
+  transform: rotate(-45deg);
+  top: -10px;
+}
+.container .header .burger-menu .linetr2 {
+  opacity: 0;
+}
